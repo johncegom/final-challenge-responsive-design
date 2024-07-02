@@ -1,0 +1,297 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.header__main {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  font-weight: bold;
+  width: 20%;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__sign-up {
+  background-color: #a59678;
+  border-radius: 20px;
+  padding: 0.5em 1em;
+  font-weight: bold;
+}
+
+.nav__item + .nav__item {
+  margin-left: 1em;
+}
+
+.hero__title {
+  font-size: 45px;
+  line-height: 1.2em;
+  width: 47%;
+}
+
+.hero__title span {
+  color: #a59678;
+}
+
+.hero__content {
+  align-self: end;
+  width: 47%;
+  margin-left: auto;
+  margin-bottom: 1em;
+}
+
+.hero__description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.hero__cta {
+  margin-top: 1em;
+  font-size: 12px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.25em 2em;
+  border-radius: 20px;
+  background-color: #a59678;
+}
+
+.section1__content {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+.section1__content + .section1__content {
+  margin-top: 2.5em;
+}
+
+.section1__content h3 {
+  color: #a59678;
+  font-size: 30px;
+}
+
+.section1__content p {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin-top: 0.5em;
+}
+
+.section2__main h2 {
+  color: #a59678;
+  font-size: 36px;
+  margin-bottom: 0.75em;
+}
+
+.section2__main p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+}
+
+.section2__main figure {
+  margin: 1.5em 0;
+}
+
+.section2__support {
+  margin-top: 2em;
+  text-align: center;
+  color: #fff;
+}
+
+.support__section {
+  background-color: #3b4050;
+  padding: 3em;
+}
+
+.support__section + .support__section {
+  margin-top: 1.5em;
+}
+
+.support__section h3 {
+  margin-bottom: 0.75em;
+  font-size: 24px;
+}
+
+.support__section p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.footer__title {
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 28px;
+}
+
+.footer__content {
+  justify-content: center;
+}
+
+.content__section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content__section + .content__section {
+  margin-left: auto;
+}
+
+.content__section h3 {
+  color: #a59678;
+  font-size: 21px;
+  margin-top: 1.5em;
+}
+
+.content__section p {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1em;
+}
+
+.content__section a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1em;
+}
+
+/* Layout */
+
+.header {
+  background-color: #2e323f;
+  display: flex;
+  padding: 0.75em 0;
+}
+
+.hero {
+  background-color: #3b4050;
+  padding: 5em 0;
+  color: #fff;
+}
+
+.section1 {
+  background-color: #f3f3f3;
+  padding: 4em 0;
+}
+
+.section2 {
+  padding: 4em 0;
+}
+
+.footer {
+  background-color: #3b4050;
+  padding-bottom: 4em;
+}
+
+@media (min-width: 700px) {
+  .section2__support {
+    display: flex;
+  }
+  .support__section + .support__section {
+    margin-top: 0;
+    margin-left: 1em;
+  }
+  .support__section h3 {
+    font-size: 22px;
+  }
+  .footer__title {
+    font-size: 45px;
+  }
+  .footer__content {
+    display: flex;
+  }
+  .footer__content > section:first-child {
+    width: 40%;
+  }
+  .content__section {
+    text-align: initial;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header__main {
+    font-size: 18px;
+  }
+  .nav__item + .nav__item {
+    margin-left: 2em;
+  }
+  .hero__title {
+    font-size: 90px;
+  }
+  .hero__description {
+    font-size: 26px;
+  }
+  .hero__cta {
+    font-size: 26px;
+  }
+  .section1__main {
+    display: flex;
+    flex-direction: row;
+  }
+  .section1__content {
+    width: 23%;
+  }
+  .section1__content + .section1__content {
+    margin-top: 0;
+    margin-left: auto;
+  }
+  .section2__content {
+    display: flex;
+  }
+  .section2__main {
+    width: 47%;
+  }
+  .section2__support {
+    width: 47%;
+    display: block;
+    margin-left: auto;
+    margin-top: 0px;
+  }
+
+  .support__section + .support__section {
+    margin-top: 1em;
+    margin-left: 0;
+  }
+  .support__section h3 {
+    font-size: 30px;
+  }
+  .support__section p {
+    font-size: 18px;
+  }
+}
