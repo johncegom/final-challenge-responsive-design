@@ -14,6 +14,10 @@ img {
   width: 100%;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .header a {
   color: #fff;
   text-decoration: none;
@@ -56,8 +60,8 @@ img {
 }
 
 .hero__title {
-  font-size: 45px;
-  line-height: 1.2em;
+  font-size: 2.8125rem; /* 45px */
+  line-height: 1.5;
   width: 47%;
 }
 
@@ -74,13 +78,13 @@ img {
 
 .hero__description {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  line-height: 1.5em;
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 .hero__cta {
   margin-top: 1em;
-  font-size: 12px;
+  font-size: 0.75rem;
   display: inline-block;
   text-decoration: none;
   color: #fff;
@@ -101,25 +105,25 @@ img {
 
 .section1__content h3 {
   color: #a59678;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .section1__content p {
   color: #000000;
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin-top: 0.5em;
 }
 
 .section2__main h2 {
   color: #a59678;
-  font-size: 36px;
+  font-size: 2.25rem;
   margin-bottom: 0.75em;
 }
 
 .section2__main p {
   font-family: "Montserrat", sans-serif;
-  font-size: 21px;
+  font-size: 1.3125rem;
 }
 
 .section2__main figure {
@@ -143,19 +147,19 @@ img {
 
 .support__section h3 {
   margin-bottom: 0.75em;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .support__section p {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .footer__title {
   color: #fff;
   text-align: center;
   padding: 1em 0;
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 .footer__content {
@@ -174,7 +178,7 @@ img {
 
 .content__section h3 {
   color: #a59678;
-  font-size: 21px;
+  font-size: 1.3125rem;
   margin-top: 1.5em;
 }
 
@@ -228,10 +232,10 @@ img {
     margin-left: 1em;
   }
   .support__section h3 {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
   .footer__title {
-    font-size: 45px;
+    font-size: 2.8125rem;
   }
   .footer__content {
     display: flex;
@@ -246,19 +250,19 @@ img {
 
 @media (min-width: 1000px) {
   .header__main {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .nav__item + .nav__item {
     margin-left: 2em;
   }
   .hero__title {
-    font-size: 90px;
+    font-size: 5.625rem;
   }
   .hero__description {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
   .hero__cta {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
   .section1__main {
     display: flex;
@@ -289,9 +293,9 @@ img {
     margin-left: 0;
   }
   .support__section h3 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
   .support__section p {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
